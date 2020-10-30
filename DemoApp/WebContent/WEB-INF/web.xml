@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DemoApp</display-name>
+
+<servlet>
+  <servlet-name>Add</servlet-name>
+  <servlet-class>com.demoapp.AddServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>Add</servlet-name>
+  <url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>Square</servlet-name>
+  <servlet-class>com.demoapp.SquareServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>Square</servlet-name>
+  <url-pattern>/sq</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+  <servlet-name>AddRedirect</servlet-name>
+  <servlet-class>com.demoapp.AddRedirectServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>AddRedirect</servlet-name>
+  <url-pattern>/addredirect</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>SquareRedirect</servlet-name>
+  <servlet-class>com.demoapp.SquareRedirectServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>SquareRedirect</servlet-name>
+  <url-pattern>/sqredirect</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>AddSessionServlet</servlet-name>
+  <servlet-class>com.demoapp.AddSessionServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>AddSessionServlet</servlet-name>
+  <url-pattern>/addsession</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>SquareSessionServlet</servlet-name>
+  <servlet-class>com.demoapp.SquareSessionServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>SquareSessionServlet</servlet-name>
+  <url-pattern>/sqsession</url-pattern>
+</servlet-mapping>
+
+</web-app>
